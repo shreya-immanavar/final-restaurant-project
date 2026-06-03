@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   FoodieHub - Synchronized Design System
+   ========================================== */
+
+:root {
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  /* Colors - Sleek Violet & Deep Coral Theme */
+  --color-primary: hsl(256, 88%, 56%);          /* Deep Indigo/Violet */
+  --color-primary-light: hsl(256, 100%, 65%);
+  --color-primary-glow: hsla(256, 88%, 56%, 0.3);
+  
+  --color-secondary: hsl(15, 95%, 55%);         /* Warm Coral Accent */
+  --color-secondary-light: hsl(15, 100%, 62%);
+  --color-secondary-glow: hsla(15, 95%, 55%, 0.25);
+
+  --color-success: hsl(145, 80%, 42%);          /* Emerald Green */
+  --color-success-light: hsl(145, 75%, 93%);
+  --color-danger: hsl(355, 85%, 52%);           /* Crimson Red */
+  --color-danger-light: hsl(355, 85%, 95%);
+  --color-warning: hsl(38, 92%, 50%);           /* Amber Gold */
+  --color-warning-light: hsl(38, 92%, 93%);
+  --color-info: hsl(190, 90%, 45%);             /* Cyan Blue */
+  --color-info-light: hsl(190, 90%, 93%);
+
+  /* Neutrals */
+  --color-bg: hsl(220, 28%, 97%);               /* Light Warm Gray */
+  --color-surface: hsl(0, 0%, 100%);            /* Card Base */
+  --color-surface-soft: hsl(220, 20%, 94%);     /* Gray Accent Table */
+  --color-text: hsl(222, 47%, 12%);             /* Ink Dark */
+  --color-text-muted: hsl(218, 16%, 48%);       /* Slate Gray */
+  --color-border: hsl(220, 20%, 90%);           /* Light Divider */
+  --color-border-hover: hsl(220, 20%, 82%);
+
+  /* Shadows & Radius */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.07), 0 5px 15px -3px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 20px 40px -10px rgba(26, 32, 44, 0.15), 0 10px 20px -5px rgba(26, 32, 44, 0.05);
+  --shadow-primary: 0 8px 25px -5px rgba(102, 126, 234, 0.4);
+  --shadow-secondary: 0 8px 25px -5px rgba(238, 90, 36, 0.4);
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Glass-morphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-md);
+}
+
+/* Import global styles to keep it fully aligned */
+@import url('style.css');
