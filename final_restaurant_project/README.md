@@ -59,6 +59,3 @@ When moving this project to a live server, follow these steps to ensure it works
    $dbname     = "your_db_name";
    ```
 
-## ⚠️ Troubleshooting Images
-
-If you notice that uploaded images are displaying as placeholder letters (e.g., "B" or "D") instead of the actual images, run the included `setup_localhost.php` script locally to automatically fix the database and path configurations.
